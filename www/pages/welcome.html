@@ -1,0 +1,70 @@
+<style type="text/css">
+
+
+#map_canvas {
+  position: fixed;
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (orientation:portrait) {
+  /* For portrait layouts only */
+  #map_canvas {
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+  }
+  
+@media only screen and (orientation:landscape) {
+  /* For landscape layouts only */
+ #map_canvas {
+    top: 50px;
+    left: 50%;
+    right: 0;
+    bottom: 5%;
+  }
+}
+.title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#demoBtn {
+  position: absolute !important;
+  left: 20% !important;
+  width: 60% !important;
+  bottom: 5% !important;
+}
+
+#infoWnd_frame {
+  position: absolute;
+  width: 200px;
+  height: 144px;
+  background-image: url("images/myinfo.png");
+  background-size: contain;
+}
+#infoWnd_body {
+  position: absolute;
+  width: 144px;
+  height: 66px;
+  left: 24px;
+  top: 28px;
+}
+</style>
+<div id="map_canvas">
+</div>
+
+
+<script>
+$(document).one("pageLoad", function(event, map) {
+const GOOGLE = new plugin.google.maps.LatLng(37.422858, -122.085065);
+map.addMarker({
+  'position': GOOGLE,
+  'draggable': true
+});
+  });
+ 
+
+
+</script>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>ConnectMe</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.4.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/example.js"></script>
+    <script src="js/prettify.js"></script>
+     <script src="js/ShowProfile.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+    
+      <header data-role="header"> 
+        <h1 class="ui-title" role="heading">ConnectMe</h1>
+        <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+         <a href="#menulist" data-role="button" data-icon="bullets">menu</a>
+        </div>
+      </header><!-- /header -->
+    
+      <div role="main" class="ui-content jqm-content">
+        <div id='container'></div>
+      </div><!-- /content -->
+    
+    
+      <div data-role="panel" id="menulist" data-position="left" data-display="overlay">
+        <ul data-role="listview">
+          <li action="welcome">Welcome</li>
+          <li data-role="list-divider">Menu</li>
+          <li action="showProfile">My Events</li>
+          <li action="mapOptions">Map Options</li>
+           <li action="mapOptions">Add Events</li>
+          <li action="drawOverlays">Calendar</li>
+          <li action="groundOverlay">Event List</li>
+          <li data-role="list-divider">My Account</li>
+          <li action="marker1">My Profile</li>
+          <li action="marker1">Log Out</li>
+        </ul>
+      </div><!-- /menu panel -->
+    
+    </div><!-- /page -->
+  </body>
+</html>
